@@ -22,8 +22,8 @@ from pydrive2.auth import GoogleAuth
 from pydrive2.drive import GoogleDrive
 
 # === Load Secrets from Environment Variables ===
-CLIENT_ID = os.get_env("CLIENT_ID")
-CLIENT_SECRET = os.get_env("CLIENT_SECRET")
+CLIENT_ID = os.environ["CLIENT_ID"]
+CLIENT_SECRET = os.environ["CLIENT_SECRET"]
 
 
 # === Function to Save File to Google Drive ===
